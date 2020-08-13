@@ -1,0 +1,28 @@
+{
+  "name": "arp9",
+  "version": "1.0.0",
+  "description": "arigata9 reverse proxy in Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arigata9/arp9.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reverse_proxy",
+    "express"
+  ],
+  "author": "arigata9",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/arigata9/arp9/issues"
+  },
+  "homepage": "https://github.com/arigata9/arp9#readme",
+  "dependencies": {
+    "bouncy": "^3.2.2"
+  }
+}
