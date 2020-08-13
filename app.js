@@ -1,18 +1,18 @@
 const bouncy = require('bouncy');
 
 var router = bouncy(function (req, res, bounce) {
-    switch(req.headers.host) {
-        case 'arigata9.de':
-            bounce(3001);
-            break;
-        case 'bot.arigata9.de':
-            bounce(3002);
-            break;
-        case 'cdn.arigata9.de':
-            bounce(3003);
-        default:
-            res.statusCode = 404;
-            res.end('No such domain');
+    if(req.headers.host === 'arigata9.de') {
+        bounce(3001);
+    }
+    else if(req.headers.host === 'bot.arigata9.de') {
+        bounce(3002);
+    }
+    else if(req.headers.host === 'cdn.arigata9.de') {
+        bounce(3003);
+    }
+    else {
+        res.statusCode = 404;
+        res.end('no such domain');
     }
 });
 router.listen(3000);
