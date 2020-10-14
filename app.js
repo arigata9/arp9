@@ -14,7 +14,8 @@ var router = bouncy(function (req, res, bounce) {
         bounce(3003);
     }
     else if(req.headers.host === 'blog.arigata9.de') {
-        bounce(3004)
+        console.log('<blog.arigata9.de> Rerouting to 3004...')
+        bounce(3004);
     }
     else {
         console.log('Route <'+req.headers.host+'> couldnt be handled.');
