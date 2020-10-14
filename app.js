@@ -10,6 +10,9 @@ var router = bouncy(function (req, res, bounce) {
     else if(req.headers.host === 'cdn.arigata9.de') {
         bounce(3003);
     }
+    else if(req.headers.host === 'blog.arigata9.de') {
+        bounce(3004)
+    }
     else {
         res.statusCode = 404;
         res.end('no such domain');
