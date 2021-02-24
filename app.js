@@ -9,8 +9,8 @@ var router = bouncy(function (req, res, bounce) {
         console.log('<bot.arigata9.de> Rerouting to 3002...');
         bounce(3002);
     }
-    else if(req.headers.host === 'cdn.arigata9.de') {
-        console.log('<cdn.arigata9.de> Rerouting to 3003...');
+    else if(req.headers.host === 's1ff.arigata9.de') {
+        console.log('<s1ff.arigata9.de> Rerouting to 3003...');
         bounce(3003);
     }
     else if(req.headers.host === 'blog.arigata9.de') {
